@@ -1,16 +1,25 @@
 <!DOCTYPE html>
 <html lang="en">
+
 <head>
     <meta charset="UTF-8">
     <title>Photo studio</title>
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    <link rel="stylesheet" href="https://use.fontawesome.com/releases/v5.8.1/css/all.css" integrity="sha384-50oBUHEmvpQ+1lW4y57PTFmhCaXp0ML5d60M1M7uH2+nqUivzIebhndOJK28anvf" crossorigin="anonymous">
+    <link rel="stylesheet" href="https://use.fontawesome.com/releases/v5.8.1/css/all.css"
+        integrity="sha384-50oBUHEmvpQ+1lW4y57PTFmhCaXp0ML5d60M1M7uH2+nqUivzIebhndOJK28anvf" crossorigin="anonymous">
     <link rel="stylesheet" href="css/style.css">
+    <script src="js/main.js" defer></script>
 </head>
+
 <body>
     <!-- nav -->
     <nav>
         <a href="index.php" class="logo"><i class="fas fa-camera"></i>&nbsp;Photogenix</a>
+        <button class="toggler">
+            <span class="bar"></span>
+            <span class="bar"></span>
+            <span class="bar"></span>
+        </button>
         <ul>
             <li>
                 <a href="index.php" class="<?php if($page == 'home') {echo 'active';}?>">Home</a>
