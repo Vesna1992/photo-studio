@@ -124,6 +124,7 @@ nav {
         @include flex(space-between, center, row);
         @media (max-width: 767px) {
             @include flex(center, center, column);
+            width: 100%;
             margin-top: 20px;
             opacity: 0;
             height: 0;
@@ -138,6 +139,9 @@ nav {
             display: block;
             padding: 25px;
             border-bottom: 2px solid transparent;
+            @media (max-width: 767px) {
+                padding: 20px 0;
+            }
             &:hover {
                 border-bottom: 2px solid $green;
             }  
